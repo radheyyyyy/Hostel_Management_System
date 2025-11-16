@@ -1,5 +1,5 @@
 // frontend.js
-const API_BASE = 'http://localhost:5500'; // change port if server uses another
+const API_BASE = 'https://hostel-backend-q5iu.onrender.com'; // change port if server uses another
 
 async function apiGet(path){
   try {
@@ -50,3 +50,4 @@ function showMsg(id, text, isError){
   el.style.color = isError ? 'crimson' : 'green';
   setTimeout(()=>{ el.textContent = ''; }, 4000);
 }
+
